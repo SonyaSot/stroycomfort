@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Стройкомфорт</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Логотип">
+      <span>Стройкомфорт</span>
+    </div>
+    <div class="phone">+7 (999) 123-45-67</div>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Главная</a>
+    <a href="portfolio.html">Портфолио</a>
+    <a href="services.html">Услуги</a>
+    <a href="reviews.html">Отзывы</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+
+  <section class="banner">
+    <h1>Качественный ремонт под ключ</h1>
+    <p>Черновые и чистовые работы. Гарантия. Фиксированная цена.</p>
+  </section>
+
+  <div class="container">
+    <!-- Общая галерея на главной -->
+    <h2 style="text-align:center; margin:1.5rem 0;">Наши работы</h2>
+    <div class="gallery">
+      <img src="images/rough1.jpg" alt="Работа 1">
+      <img src="images/finish1.jpg" alt="Работа 2">
+      <img src="images/rough2.jpg" alt="Работа 3">
+      <img src="images/finish2.jpg" alt="Работа 4">
+    </div>
+
+    <!-- Форма заявки -->
+    <div class="form-container">
+      <h2>Оставить заявку</h2>
+      <form id="requestForm">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Номер телефона" required>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <footer><p>&copy; 2025 Стройкомфорт. Все права защищены.</p></footer>
+
+  <script>
+    document.getElementById('requestForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
