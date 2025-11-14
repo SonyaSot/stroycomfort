@@ -1,112 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Отзывы — Стройкомфорт</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзывы | Стройкомфорт</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Шапка -->
   <header class="header">
-    <div class="logo">
-      <img src="images/logo.png" alt="Логотип">
-      <span>Стройкомфорт</span>
+    <div class="container header-container">
+      <div class="logo-container">
+        <!-- Путь к вашему логотипу -->
+        <img src="logo.png" alt="Логотип Стройкомфорт" class="logo-image">
+        <span class="logo-text">Стройкомфорт</span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="phone"><i class="fas fa-phone"></i> +7 (999) 123-45-67</div>
     </div>
-    <div class="phone">+7 (999) 123-45-67</div>
   </header>
 
-  <nav>
-    <a href="index.html">Главная</a>
-    <a href="portfolio.html">Портфолио</a>
-    <a href="services.html">Услуги</a>
-    <a href="reviews.html" class="active">Отзывы</a>
-    <a href="contacts.html">Контакты</a>
-  </nav>
-
-  <div class="container">
-    <h1 style="text-align:center; margin:2rem 0;">Отзывы наших клиентов</h1>
-
-    <!-- Существующие отзывы -->
-    <div id="reviews-list">
-      <div class="review">
-        <p>Ребята сделали ремонт в двухкомнатной квартире за 3 недели! Всё чётко по договору, без задержек. Очень довольны чистовыми работами — всё аккуратно и красиво.</p>
-        <p><strong>— Анна, Москва</strong></p>
-      </div>
-
-      <div class="review">
-        <p>Заказывал капитальный ремонт с полным сопровождением. Дизайнер помог с выбором материалов, прораб — с графиком. Результат превзошёл ожидания. Рекомендую!</p>
-        <p><strong>— Сергей, Краснодар</strong></p>
-      </div>
-
-      <div class="review">
-        <p>Делали черновые работы под сдачу квартиры в аренду. Быстро, недорого, по качеству — отлично. Теперь обращаемся только к ним.</p>
-        <p><strong>— Дмитрий, Сочи</strong></p>
-      </div>
+  <!-- Герой-секция -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Отзывы наших клиентов</h1>
+      <p>Честные мнения людей, которым мы помогли создать идеальное пространство.</p>
     </div>
+  </section>
 
-    <!-- Форма добавления отзыва -->
-    <div class="form-container" style="margin-top: 3rem;">
-      <h2>Оставить отзыв</h2>
-      <form id="reviewForm">
-        <input type="text" id="name" placeholder="Ваше имя" required>
-        <input type="text" id="city" placeholder="Город" required>
-        <textarea id="message" placeholder="Ваш отзыв" rows="5" required style="width:100%; padding:0.8rem; border:1px solid #ccc; border-radius:8px; margin:0.5rem 0;"></textarea>
-        <button type="submit">Опубликовать отзыв</button>
+  <!-- Форма отзыва -->
+  <section class="review-form-section">
+    <div class="container">
+      <h2 class="section-title">Оставьте свой отзыв</h2>
+      <form id="reviewForm" class="review-form">
+        <input type="text" id="reviewName" placeholder="Ваше имя" required>
+        <input type="email" id="reviewEmail" placeholder="Ваш email" required>
+        <textarea id="reviewText" placeholder="Ваш отзыв" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Отправить отзыв</button>
       </form>
     </div>
-  </div>
+  </section>
 
-  <footer><p>&copy; 2025 Стройкомфорт. Все права защищены.</p></footer>
+  <!-- Отзывы -->
+  <section class="reviews">
+    <div class="container">
+      <h2 class="section-title">Что говорят наши клиенты</h2>
+      <div id="reviewsContainer" class="reviews-container">
+        <!-- Отзывы будут добавляться здесь динамически -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo-container">
+          <!-- Путь к вашему логотипу в футере -->
+          <img src="logo.png" alt="Логотип Стройкомфорт" class="footer-logo-image">
+          <span class="footer-logo-text">Стройкомфорт</span>
+        </div>
+        <div class="footer-contact">
+          <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-envelope"></i> info@stroykomfort.ru</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Главная</a>
+          <a href="portfolio.html">Портфолио</a>
+          <a href="services.html">Услуги</a>
+          <a href="reviews.html">Отзывы</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 Стройкомфорт. Все права защищены.
+      </div>
+    </div>
+  </footer>
 
   <script>
-    // Загружаем отзывы из localStorage
+    // Загрузка отзывов из localStorage
     function loadReviews() {
       const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
-      const container = document.getElementById('reviews-list');
-      
+      const container = document.getElementById('reviewsContainer');
+      container.innerHTML = '';
+
+      if (reviews.length === 0) {
+        container.innerHTML = '<p class="no-reviews">Пока нет отзывов. Будьте первым!</p>';
+        return;
+      }
+
       reviews.forEach(review => {
-        const reviewEl = document.createElement('div');
-        reviewEl.className = 'review';
-        reviewEl.innerHTML = `
+        const reviewCard = document.createElement('div');
+        reviewCard.className = 'review-card';
+        reviewCard.innerHTML = `
           <p>${review.text}</p>
-          <p><strong>— ${review.name}, ${review.city}</strong></p>
+          <strong>— ${review.name} (${review.email})</strong>
+          <span class="review-date">${new Date(review.date).toLocaleString()}</span>
         `;
-        container.appendChild(reviewEl);
+        container.appendChild(reviewCard);
       });
     }
 
-    // Сохраняем отзыв
+    // Обработка формы отзыва
     document.getElementById('reviewForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      
-      const name = document.getElementById('name').value.trim();
-      const city = document.getElementById('city').value.trim();
-      const message = document.getElementById('message').value.trim();
 
-      const newReview = { name, city, text: message };
+      const name = document.getElementById('reviewName').value.trim();
+      const email = document.getElementById('reviewEmail').value.trim();
+      const text = document.getElementById('reviewText').value.trim();
 
-      // Получаем старые отзывы и добавляем новый
-      const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      if (!name || !email || !text) {
+        alert('Пожалуйста, заполните все поля.');
+        return;
+      }
+
+      const newReview = {
+        name: name,
+        email: email,
+        text: text,
+        date: new Date().toISOString()
+      };
+
+      let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
       reviews.push(newReview);
       localStorage.setItem('reviews', JSON.stringify(reviews));
 
-      // Добавляем отзыв на страницу
-      const container = document.getElementById('reviews-list');
-      const reviewEl = document.createElement('div');
-      reviewEl.className = 'review';
-      reviewEl.innerHTML = `
-        <p>${message}</p>
-        <p><strong>— ${name}, ${city}</strong></p>
-      `;
-      container.appendChild(reviewEl);
+      // Очистка формы
+      document.getElementById('reviewForm').reset();
 
-      // Очищаем форму
-      this.reset();
-      alert('Спасибо за отзыв! Он будет опубликован на сайте.');
+      // Обновление списка отзывов
+      loadReviews();
+
+      alert('Спасибо за ваш отзыв!');
     });
 
-    // Загружаем отзывы при открытии страницы
+    // Загрузка отзывов при загрузке страницы
     document.addEventListener('DOMContentLoaded', loadReviews);
   </script>
+
 </body>
 </html>
