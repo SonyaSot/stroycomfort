@@ -1,73 +1,204 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Стройкомфорт</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стройкомфорт — Качественный ремонт под ключ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Шапка -->
   <header class="header">
-    <div class="logo">
-      <img src="images/logo.png" alt="Логотип">
-      <span>Стройкомфорт</span>
+    <div class="container header-container">
+      <div class="logo-container">
+        <!-- Путь к вашему логотипу -->
+        <img src="logo.png" alt="Логотип Стройкомфорт" class="logo-image">
+        <span class="logo-text">Стройкомфорт</span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="phone"><i class="fas fa-phone"></i> +7 (999) 123-45-67</div>
     </div>
-    <div class="phone">+7 (999) 123-45-67</div>
   </header>
 
-  <nav>
-    <a href="index.html" class="active">Главная</a>
-    <a href="portfolio.html">Портфолио</a>
-    <a href="services.html">Услуги</a>
-    <a href="reviews.html">Отзывы</a>
-    <a href="contacts.html">Контакты</a>
-  </nav>
-
-  <section class="banner">
-    <h1>Качественный ремонт под ключ</h1>
-    <p>Черновые и чистовые работы. Гарантия. Фиксированная цена.</p>
+  <!-- Герой-секция -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Качественный ремонт под ключ</h1>
+      <p>Черновые и чистовые работы. Гарантия. Фиксированная цена.</p>
+      <a href="contact.html" class="btn-primary">Оставить заявку</a>
+    </div>
   </section>
 
-  <div class="container">
-    <!-- Общая галерея на главной -->
-    <h2 style="text-align:center; margin:1.5rem 0;">Наши работы</h2>
-    <div class="gallery">
-      <img src="images/rough1.jpg" alt="Работа 1">
-      <img src="images/finish1.jpg" alt="Работа 2">
-      <img src="images/rough2.jpg" alt="Работа 3">
-      <img src="images/finish2.jpg" alt="Работа 4">
+  <!-- Наши работы -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">Наши работы</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/400x300?text=Ремонт+квартиры" alt="Ремонт квартиры">
+          <div class="overlay">
+            <h3>Ремонт квартиры</h3>
+            <p>2024 год, Москва</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/400x300?text=Ремонт+офиса" alt="Ремонт офиса">
+          <div class="overlay">
+            <h3>Ремонт офиса</h3>
+            <p>2024 год, Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/400x300?text=Дизайн+интерьера" alt="Дизайн интерьера">
+          <div class="overlay">
+            <h3>Дизайн интерьера</h3>
+            <p>2024 год, Екатеринбург</p>
+          </div>
+        </div>
+      </div>
+      <a href="portfolio.html" class="btn-secondary">Смотреть все работы</a>
     </div>
+  </section>
 
-    <!-- Форма заявки -->
-    <div class="form-container">
-      <h2>Оставить заявку</h2>
-      <form id="requestForm">
-        <input type="text" placeholder="Ваше имя" required>
-        <input type="tel" placeholder="Номер телефона" required>
-        <button type="submit">Отправить заявку</button>
+  <!-- Блок "Смотрите нас на RuTube" (как на скриншоте) -->
+  <section class="rutube-promo">
+    <div class="container">
+      <div class="rutube-content">
+        <div class="rutube-image">
+          <img src="https://via.placeholder.com/400x300?text=Логотип+Чёрный+список" alt="Чёрный список на стройке">
+        </div>
+        <div class="rutube-text">
+          <h2>Смотрите нас на RuTube!</h2>
+          <p>Мы снимались в передаче «Чёрный список» — и прошли проверку насквозь: без обмана, без скрытых платежей, только по договору и с гарантией качества.</p>
+          <a href="https://rutube.ru/video/60596d2f67c985d945f5c9e95200e99d/" target="_blank" class="btn-video">Смотреть</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Новый блок: Форма обратной связи -->
+  <section class="callback-form-section">
+    <div class="container">
+      <h2 class="section-title">Оставьте заявку</h2>
+      <p class="subtitle">Мы свяжемся с вами в ближайшее время</p>
+      <form id="callbackForm" class="callback-form">
+        <input type="text" id="callbackName" placeholder="Ваше имя" required>
+        <input type="tel" id="callbackPhone" placeholder="Ваш телефон" required>
+        <button type="submit" class="btn-primary">Отправить</button>
       </form>
     </div>
-  </div>
+  </section>
 
-  <footer><p>&copy; 2025 Стройкомфорт. Все права защищены.</p></footer>
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo-container">
+          <!-- Путь к вашему логотипу в футере -->
+          <img src="logo.png" alt="Логотип Стройкомфорт" class="footer-logo-image">
+          <span class="footer-logo-text">Стройкомфорт</span>
+        </div>
+        <div class="footer-contact">
+          <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-envelope"></i> info@stroykomfort.ru</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Главная</a>
+          <a href="portfolio.html">Портфолио</a>
+          <a href="services.html">Услуги</a>
+          <a href="reviews.html">Отзывы</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 Стройкомфорт. Все права защищены.
+      </div>
+    </div>
+  </footer>
 
   <script>
-    document.getElementById('requestForm').addEventListener('submit', function(e) {
+    // Плавная прокрутка к якорям
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Анимация при прокрутке
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.portfolio-item, .rutube-content, .callback-form').forEach(el => {
+      el.classList.add('animate-out');
+      observer.observe(el);
+    });
+
+    // Отправка формы в Telegram-бота
+    document.getElementById('callbackForm').addEventListener('submit', async function(e) {
       e.preventDefault();
-      const name = this.querySelector('[placeholder="Ваше имя"]').value;
-      const phone = this.querySelector('[placeholder="Номер телефона"]').value;
-      
-      // Отправка в Telegram
-      const token = ''; 
-      const chatId = '';  
-      const message = `Заявка с сайта:\nИмя: ${name}\nТелефон: ${phone}`;
-      
-      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: chatId, text: message })
-      }).then(() => alert('Спасибо! Мы скоро свяжемся с вами.'));
+
+      const name = document.getElementById('callbackName').value.trim();
+      const phone = document.getElementById('callbackPhone').value.trim();
+
+      if (!name || !phone) {
+        alert('Пожалуйста, заполните все поля.');
+        return;
+      }
+
+      // --- НАСТРОЙКИ БОТА ---
+      const botToken = 'YOUR_BOT_TOKEN'; // <- ВСТАВЬТЕ СЮДА СВОЙ ТОКЕН
+      const chatId = 'YOUR_CHAT_ID';     // <- ВСТАВЬТЕ СЮДА СВОЙ ID ЧАТА
+      // ---------------------
+
+      const message = `Новая заявка!\nИмя: ${name}\nТелефон: ${phone}`;
+
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+      const data = {
+        chat_id: chatId,
+        text: message,
+        parse_mode: 'HTML'
+      };
+
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+          alert('Спасибо! Ваша заявка отправлена.');
+          document.getElementById('callbackForm').reset();
+        } else {
+          alert('Ошибка при отправке. Попробуйте позже.');
+        }
+      } catch (error) {
+        console.error('Ошибка:', error);
+        alert('Ошибка при отправке. Попробуйте позже.');
+      }
     });
   </script>
+
 </body>
 </html>
