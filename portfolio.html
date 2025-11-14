@@ -1,65 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Портфолио — Стройкомфорт</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио | Стройкомфорт</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Шапка -->
   <header class="header">
-    <div class="logo">
-      <img src="images/logo.png" alt="Логотип">
-      <span>Стройкомфорт</span>
+    <div class="container header-container">
+      <div class="logo-container">
+        <!-- Путь к вашему логотипу -->
+        <img src="logo.png" alt="Логотип Стройкомфорт" class="logo-image">
+        <span class="logo-text">Стройкомфорт</span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="phone"><i class="fas fa-phone"></i> +7 (999) 123-45-67</div>
     </div>
-    <div class="phone">+7 (999) 123-45-67</div>
   </header>
 
-  <nav>
-    <a href="index.html">Главная</a>
-    <a href="portfolio.html" class="active">Портфолио</a>
-    <a href="services.html">Услуги</a>
-    <a href="reviews.html">Отзывы</a>
-    <a href="contacts.html">Контакты</a>
-  </nav>
-
-  <div class="container">
-    <h1 style="text-align:center; margin:2rem 0;">Портфолио</h1>
-
-    <!-- Вкладки: черновые / чистовые -->
-    <div class="tab-buttons">
-      <button class="tab-btn active" onclick="openTab('rough')">Черновые работы</button>
-      <button class="tab-btn" onclick="openTab('finish')">Чистовые работы</button>
+  <!-- Герой-секция -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Наши проекты</h1>
+      <p>Посмотрите, что мы уже сделали для наших клиентов.</p>
     </div>
+  </section>
 
-    <!-- Черновые -->
-    <div id="rough" class="tab-content active">
-      <div class="gallery">
-        <img src="images/rough1.jpg" alt="Черновые 1">
-        <img src="images/rough2.jpg" alt="Черновые 2">
-        <img src="images/rough3.jpg" alt="Черновые 3">
+  <!-- Портфолио - две папки -->
+  <section class="portfolio-categories">
+    <div class="container">
+      <h2 class="section-title">Наши работы</h2>
+
+      <!-- Черновые работы -->
+      <div class="category-section">
+        <h3 class="category-title">Черновые работы</h3>
+        <div class="category-grid">
+          <div class="media-item">
+            <img src="https://via.placeholder.com/300x200?text=Черновые+работы+1" alt="Черновые работы 1">
+            <div class="media-overlay">
+              <span>Фото</span>
+            </div>
+          </div>
+          <div class="media-item">
+            <video controls>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+            <div class="media-overlay">
+              <span>Видео</span>
+            </div>
+          </div>
+          <div class="media-item">
+            <img src="https://via.placeholder.com/300x200?text=Черновые+работы+2" alt="Черновые работы 2">
+            <div class="media-overlay">
+              <span>Фото</span>
+            </div>
+          </div>
+          <div class="media-item">
+            <video controls>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+            <div class="media-overlay">
+              <span>Видео</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Чистовые работы -->
+      <div class="category-section">
+        <h3 class="category-title">Чистовые работы</h3>
+        <div class="category-grid">
+          <div class="media-item">
+            <img src="https://via.placeholder.com/300x200?text=Чистовые+работы+1" alt="Чистовые работы 1">
+            <div class="media-overlay">
+              <span>Фото</span>
+            </div>
+          </div>
+          <div class="media-item">
+            <video controls>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+            <div class="media-overlay">
+              <span>Видео</span>
+            </div>
+          </div>
+          <div class="media-item">
+            <img src="https://via.placeholder.com/300x200?text=Чистовые+работы+2" alt="Чистовые работы 2">
+            <div class="media-overlay">
+              <span>Фото</span>
+            </div>
+          </div>
+          <div class="media-item">
+            <video controls>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+            <div class="media-overlay">
+              <span>Видео</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="contact.html" class="btn-primary">Заказать свой проект</a>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo-container">
+          <!-- Путь к вашему логотипу в футере -->
+          <img src="logo.png" alt="Логотип Стройкомфорт" class="footer-logo-image">
+          <span class="footer-logo-text">Стройкомфорт</span>
+        </div>
+        <div class="footer-contact">
+          <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-envelope"></i> info@stroykomfort.ru</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Главная</a>
+          <a href="portfolio.html">Портфолио</a>
+          <a href="services.html">Услуги</a>
+          <a href="reviews.html">Отзывы</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 Стройкомфорт. Все права защищены.
       </div>
     </div>
+  </footer>
 
-    <!-- Чистовые -->
-    <div id="finish" class="tab-content">
-      <div class="gallery">
-        <img src="images/finish1.jpg" alt="Чистовые 1">
-        <img src="images/finish2.jpg" alt="Чистовые 2">
-        <img src="images/finish3.jpg" alt="Чистовые 3">
-      </div>
-    </div>
-  </div>
-
-  <footer><p>&copy; 2025 Стройкомфорт. Все права защищены.</p></footer>
-
-  <script>
-    function openTab(tabName) {
-      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-      document.getElementById(tabName).classList.add('active');
-      event.target.classList.add('active');
-    }
-  </script>
 </body>
 </html>
